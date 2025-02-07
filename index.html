@@ -1,34 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h2>Hello, eu sou o </h2>
-            <h1>Paulo Victor <br><span id="dynamic-text"></span></h1>
-            <p>Sou um desenvolvedor FullStack com 1 ano de experiência, já tendo trabalhado em projetos grandes com React, Node.js e Java. Tenho paixão por sempre estar buscando aprendizado contínuo. Minha comunicação e trabalho em equipe são diferenciais que me permitem colaborar e evoluir constantemente.</p>
-            <button>Entre em contato</button> 
-        </div>
-    </header>
+  <header>
+    <div class="container">
+      <h2>Hello, eu sou o </h2>
+      <h1>Paulo Victor <br><span id="dynamic-text"></span></h1>
+      <p>Sou um desenvolvedor FullStack com 1 ano de experiência, já tendo trabalhado em projetos grandes com React, Node.js e Java. Tenho paixão por sempre estar buscando aprendizado contínuo. Minha comunicação e trabalho em equipe são diferenciais que me permitem colaborar e evoluir constantemente.</p>
+      <button>Entre em contato</button> 
+    </div>
+  </header>
 
-    <nav>
-        <img src="assets/images/logo (1).png" alt="Logo Paulo Victor">
-        <ul id="menu-list">
-            <a href="">Sobre mim</a>
-            <a href="">Serviços</a>
-            <a href="">Projetos</a>
-            <a href="">Contato</a>
-        </ul>
-    </nav>
-    <section>
-       <p>Nova seção</p>
-    </section>
+ 
+  <nav class="desktop-nav">
+    <img src="assets/images/logo (1).png" alt="Logo Paulo Victor">
+    <ul id="menu-list">
+      <a href="">Sobre mim</a>
+      <a href="">Serviços</a>
+      <a href="">Curriculo</a>
+      <a href="">Projetos</a>
+      <a href="">Contato</a>
+    </ul>
+  </nav>
 
-    <script src="assets/scripts/titleanimation.js"></script>
+  <section>
+    <p>Nova seção</p>
+  </section>
+
+  <nav class="mobile-nav">
+    <ul>
+      <li>
+        <a href="#">
+          <i class="bi bi-house"></i>
+          <span>Sobre mim</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bi bi-compass"></i>
+          <span>Serviços</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bi bi-plus-circle"></i>
+          <span>Projetos</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bi bi-bell"></i>
+          <span>Curriculo</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bi bi-person"></i>
+          <span>Contato</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Script de título -->
+  <script src="assets/scripts/titleanimation.js"></script>
 </body>
 </html>
