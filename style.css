@@ -88,9 +88,6 @@ header .container h1 {
     border-right: 2px solid white;
     padding-right: 0.3125rem;
     animation: blink 0.7s infinite;
-    display: inline-block;
-    white-space: nowrap;
-    min-width: 200px;
   }
   
 
