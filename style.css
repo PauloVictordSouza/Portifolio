@@ -189,10 +189,14 @@ nav img{
     h1 {
         font-size: 1.25rem;
     }
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+    }
 }
 
 /* menor que 400px */
-@media (min-width: 350px) {
+@media (max-width: 350px) {
     header .container {
         padding: 0 0.625rem;
         text-align: center;
