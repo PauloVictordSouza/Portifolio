@@ -22,11 +22,11 @@ body, button, input, select, textarea {
 }
 
 h1 {
-    font-size: 2.75rem;
+    font-size: 3rem;
 }
 
 h2 {
-    font-size: 1.25rem;
+    font-size: 2rem;
     font-weight: 300;
 }
 
@@ -192,7 +192,7 @@ nav img{
 }
 
 /* menor que 400px */
-@media (max-width: 400px) {
+@media (min-width: 350px) {
     header .container {
         padding: 0 0.625rem;
         text-align: center;
@@ -201,7 +201,7 @@ nav img{
         padding: 0 0.625rem;
     }
     nav ul {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
     nav ul a {
