@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Roboto:wght@400;700&display=swap');
 
 :root {
     --purple: #6A35B3;
@@ -22,11 +22,11 @@ body, button, input, select, textarea {
 }
 
 h1 {
-    font-size: 44px;
+    font-size: 2.75rem;
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 300;
 }
 
@@ -37,19 +37,19 @@ h1, h2 {
 
 p {
     color: var(--light-gray);
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.8;
-    margin-bottom: 20px; 
+    margin-bottom: 1.25rem; 
 }
 
 button {
     background: linear-gradient(120deg, #B43774, #70264F);
     border-radius: 16px;
     border: 0;
-    padding: 12px 40px;
+    padding: 0.75rem 2.5rem;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.125rem;
     cursor: pointer;
     transition: 0.3s ease-in-out;
     margin-top: 1rem;
@@ -68,7 +68,10 @@ header {
 header .container {
     width: 50%;
     height: fit-content;
-    padding: 0 100px;
+    padding: 0 6.25rem;
+}
+header .container img{
+    display: none;
 }
 
 header .container h1 {
@@ -78,7 +81,7 @@ header .container h1 {
 #dynamic-text {
     color: var(--pink);
     border-right: 2px solid white;
-    padding-right: 5px;
+    padding-right: 0.3125rem;
     animation: blink 0.7s infinite;
 }
 
@@ -91,25 +94,121 @@ nav{
     height: 75px;
     justify-content: space-between;
     align-items: center;
-    padding: 0 100px;
+    padding: 0 6.25rem;
     position: sticky;
     top: 0;
     background-color: var(--bg-dark);
 }
 
+nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
 
 nav ul a{
-    font-size: 24px;
+    font-size: 1.5rem;
     color: var(--pink);
     text-decoration: none;
-    margin: 0  35px;
 }
 
-section{
-    height: 5500px;
-    
-}
 nav img{
     height: 45px;
     margin: 0;
+}
+
+/* RESPONSIVIDADE HEADER*/
+
+@media (max-width: 1000px){
+    nav ul a{
+        font-size: 1.125rem;
+    }
+}
+
+/* entre 930px e 780px */
+@media (max-width: 930px) and (min-width: 781px) {
+    header .container {
+        padding: 0 4.125rem;
+        width: 100%;
+    }
+    h1 {
+        font-size: 2.25rem;
+    }
+    nav {
+        padding: 0 4.125rem;
+    }
+    nav ul a {
+        font-size: 1.25rem;
+    }
+}
+
+/*Tablet*/
+@media (max-width: 780px) {
+    header .container{
+        padding: 0 3.125rem;
+        width: 100%;
+    }
+    header .container img{
+        display: inline;
+        margin-bottom: 2.1875rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    nav{
+        padding: 0 3.125rem;
+    }
+    nav img{
+        display: none;
+    }
+    nav ul{
+        padding: 0;
+    }
+    nav ul a{
+        font-size: 1rem;
+    }
+}
+
+/*celular*/
+@media (max-width: 467px) {
+    header .container{
+        padding: 0 1.25rem;
+        width: 100%;
+        text-align: center;
+    }
+    nav{
+        padding: 0 1.25rem;
+    }
+    nav ul {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+    nav ul a {
+        white-space: nowrap;
+    }
+    h1 {
+        font-size: 1.25rem;
+    }
+}
+
+/* menor que 400px */
+@media (max-width: 400px) {
+    header .container {
+        padding: 0 0.625rem;
+        text-align: center;
+    }
+    nav {
+        padding: 0 0.625rem;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul a {
+        font-size: 0.875rem;
+        margin-bottom: 0.5rem;
+    }
+    h1 {
+        font-size: 1rem;
+    }
 }

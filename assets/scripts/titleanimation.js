@@ -1,7 +1,6 @@
 const phrases = [
     "Desenvolvedor FullStack",
     "Estudante de Desenvolvimento",
-    "Apaixonado por Tecnologia"
 ];
 
 let currentPhrase = 0;
