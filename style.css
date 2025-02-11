@@ -314,6 +314,7 @@ header .container h1 {
 
 @media (max-width: 480px) {
   .about-me{
+    margin-top: 70px;
     display: flex;
     padding: 20px;
   }
@@ -376,7 +377,6 @@ header .container h1 {
 @media (max-width: 480px) {
   .services{
     margin: 70px 0;
-    
   }
   .services .services-container{
     padding: 0 20px;
