@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Portfólio | Paulo Victor</title>
   
   <link rel="stylesheet" href="style.css">
   
@@ -12,74 +12,70 @@
 <body>
   <header>
     <div class="container">
-      <h2>Hello, eu sou o </h2>
+      <h2>Olá, eu sou o </h2>
       <h1>Paulo Victor <br><span id="dynamic-text"></span></h1>
-      <p>Sou um desenvolvedor FullStack com 1 ano de experiência, já tendo trabalhado em projetos grandes com React, Node.js e Java. Tenho paixão por sempre estar buscando aprendizado contínuo. Minha comunicação e trabalho em equipe são diferenciais que me permitem colaborar e evoluir constantemente.</p>
+      <p>Sou um desenvolvedor FullStack com 1 ano de experiência, tendo trabalhado em projetos de grande porte utilizando React, Node.js e Java. Minha paixão pela tecnologia me impulsiona a estar sempre aprendendo e me aprimorando. Possuo habilidades sólidas em comunicação e trabalho em equipe, o que me permite colaborar de forma eficaz e evoluir constantemente.</p>
       <button>Entre em contato</button> 
     </div>
   </header>
 
- 
   <nav class="desktop-nav">
-    <img src="assets/images/logo (1).png" alt="Logo Paulo Victor">
+    <img src="assets/images/logo.png" alt="Logo Paulo Victor">
     <ul id="menu-list">
-      <a href="">Sobre mim</a>
-      <a href="">Serviços</a>
-      <a href="">Curriculo</a>
-      <a href="">Projetos</a>
-      <a href="">Contato</a>
+      <a href="#about-me">Sobre mim</a>
+      <a href="#services">Serviços</a>
+      <a href="#resume">Currículo</a>
+      <a href="#projects">Projetos</a>
+      <a href="#contact">Contato</a>
     </ul>
   </nav>
 
   <nav class="mobile-nav">
     <ul>
-      <li>
-        <a href="#">
-          <i class="bi bi-house"></i>
-          <span>Sobre mim</span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <i class="bi bi-compass"></i>
-          <span>Serviços</span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <i class="bi bi-plus-circle"></i>
-          <span>Projetos</span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <i class="bi bi-bell"></i>
-          <span>Curriculo</span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <i class="bi bi-person"></i>
-          <span>Contato</span>
-        </a>
-      </li>
+      <li><a href="#about-me"><i class="bi bi-house"></i><span>Sobre mim</span></a></li>
+      <li><a href="#services"><i class="bi bi-compass"></i><span>Serviços</span></a></li>
+      <li><a href="#projects"><i class="bi bi-plus-circle"></i><span>Projetos</span></a></li>
+      <li><a href="#resume"><i class="bi bi-bell"></i><span>Currículo</span></a></li>
+      <li><a href="#contact"><i class="bi bi-person"></i><span>Contato</span></a></li>
     </ul>
   </nav>
 
-  <section class="about-me">
+  <section id="about-me" class="about-me">
     <div class="container">
       <h1 class="title-pink">Sobre mim</h1>
-      <p> Olá, eu me chamo Paulo Victor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis esse cum harum nam. Illo laborum mollitia dolores ullam error ducimus, corrupti quam, optio quaerat, ea aspernatur tempora blanditiis provident. Repellendus.</p>
+      <p>Meu nome é Paulo Victor, sou apaixonado por tecnologia e desenvolvimento de software. Desde cedo, me interessei por criar soluções inovadoras que fazem a diferença na vida das pessoas. Trabalho com desenvolvimento FullStack, unindo habilidades em front-end e back-end para entregar aplicações completas e eficientes.</p>
     </div>
 
     <div class="img-container"> 
       <div class="line pink"></div>
       <div class="line purple"></div>
-      <img src="assets/images/profile.png" alt="Paulo Victor de Souza">
+      <img src="assets/images/profile.png" alt="Foto de Paulo Victor">
     </div>
   </section>
 
-  <!-- Script de título -->
+  <section id="services" class="services">
+    <h1>Serviços</h1>
+    <div class="services-container">
+      <div class="service-card">
+        <img src="assets/images/terminal-icon.png" alt="Ícone Terminal">
+        <h2>Desenvolvimento de sites</h2>
+        <p>Criação de websites modernos, responsivos e otimizados para garantir uma excelente experiência do usuário e atender às necessidades do seu negócio.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="assets/images/code-icon.png" alt="Ícone Código">
+        <h2>Desenvolvimento de APIs</h2>
+        <p>Construção de APIs robustas e escaláveis para conectar sistemas, facilitar a comunicação entre aplicações e otimizar a eficiência dos seus serviços.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="assets/images/diamond-icon.png" alt="Ícone Diamante">
+        <h2>Criação de Layouts</h2>
+        <p>Design de interfaces intuitivas e atraentes, garantindo que a identidade visual do seu projeto se destaque e proporcione a melhor usabilidade possível.</p>
+      </div>
+    </div>
+  </section>
+
   <script src="assets/scripts/titleanimation.js"></script>
 </body>
 </html>
